@@ -1,6 +1,7 @@
 *sh
 *pyc
-/data
+/data/glove.6B/
+/data/glove.6B.300d.trimmed.npz
 !/data/.gitkeep
 /results
 *.DS_Store
