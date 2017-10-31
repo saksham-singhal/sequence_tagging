@@ -71,8 +71,7 @@ class CoNLLDataset(object):
                         yield words, tags
                         words, tags = [], []
                 else:
-                    ls = line.split(' ')
-                    word, tag = ls[0],ls[-1]
+                    word, _, _, tag = line.split(' ')
                     if self.processing_word is not None:
                         word = self.processing_word(word)
                     if self.processing_tag is not None:

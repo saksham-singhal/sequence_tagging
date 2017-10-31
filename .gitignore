@@ -4,3 +4,8 @@
 !/data/.gitkeep
 /results
 *.DS_Store
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/sequence_tagging.iml
+.idea/workspace.xml
