@@ -19,8 +19,12 @@ def main():
     train = CoNLLDataset(config.filename_train, config.processing_word,
                          config.processing_tag, config.max_iter)
 
+    test = CoNLLDataset(config.filename_test, config.processing_word,
+                         config.processing_tag, config.max_iter)
+
     # train model
     model.train(train, dev)
+    model.evaluate(test)
 
 if __name__ == "__main__":
     main()
